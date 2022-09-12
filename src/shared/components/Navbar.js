@@ -72,7 +72,6 @@ const Navbar = {
 
 const NavbarComponent = ({ isAdmin, theme, toggleTheme }) => {
   const [navBarState, setNavBarState] = useState("expanded");
-  const [isMobile] = useState(false);
   const toggleNavBarState = () => {
     if (navBarState === "collapsed") setNavBarState("expanded");
     if (navBarState === "expanded") setNavBarState("collapsed");
